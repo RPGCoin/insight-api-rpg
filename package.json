@@ -1,0 +1,55 @@
+{
+  "name": "insight-api-rpg",
+  "description": "A RPGcoin blockchain REST and web socket API service for RPGcore Node.",
+  "version": "1.0.3",
+  "repository": "git://github.com/RPGCoin/insight-api-rpg.git",
+  "contributors": [
+    {
+      "name": "Silence",
+      "email": "silence@rpgcoin.gg"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/RPGCoin/insight-api-rpg/issues"
+  },
+  "homepage": "https://github.com/RPGCoin/insight-api-rpg",
+  "license": "MIT",
+  "keywords": [
+    "insight",
+    "insight api",
+    "blockchain",
+    "rpgcoin api",
+    "blockchain api",
+    "json",
+    "rpgcore"
+  ],
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec --recursive"
+  },
+  "main": "lib",
+  "rpgcoreNode": "lib",
+  "dependencies": {
+    "async": "*",
+    "bignumber.js": "^4.0.2",
+    "body-parser": "^1.13.3",
+    "compression": "^1.6.1",
+    "lodash": "^2.4.1",
+    "lru-cache": "^4.0.1",
+    "mongoose": "5.1.7",
+    "morgan": "^1.7.0",
+    "rpgcore-lib": "rpgcore-lib",
+    "rpgcore-message": "rpgcore-message",
+    "request": "^2.83.0"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "proxyquire": "^1.7.2",
+    "should": "^8.3.1",
+    "sinon": "^1.10.3"
+  }
+}
